@@ -4,16 +4,16 @@ import {Text, StyleSheet, View} from 'react-native'
 
 //component
 const ComponentScreen = ()=>{ 
-    const myName=<Text style={style.textStyleBody} >My name is Gbenge Aondoakula Raphael</Text>   
+    const myName= 'Gbenge Aondoakula Raphael'
 return (<View>
  <Text style={style.textStyleSubHead} >Gettind started with React Native!</Text>
- {myName}
+ <Text style={style.textStyleBody} >My name is {myName} </Text>   
     </View>)
 }
 
 // styles 
 const style = StyleSheet.create({
-    textStylesubHead:{
+    textStyleSubHead:{
         fontSize:45
     },
     textStyleBody:{
