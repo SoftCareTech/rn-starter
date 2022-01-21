@@ -19,7 +19,7 @@ const friends=[
             renderItem={({item })=>{ 
                 return <Text 
                  style={style.textStyle}
-                 >{item.name} - {item.age} </Text>
+                 >{item.name} -Age {item.age} </Text>
             }
         }
      />
