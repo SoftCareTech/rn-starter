@@ -11,11 +11,16 @@ const friends=[
 
 ]
 
- 
+const friends2=[
+    {name:'Friend 1' },
+    {name:'Friend 2' },
+    {name:'Friend 3' }
+    
+    ]
     
    return <FlatList 
-       
-           data ={friends}
+       keyExtractor={(friend)=>friend.name}
+           data ={friends2}
             renderItem={({item })=>{ 
                 return <Text>{item.name} </Text>
             }
