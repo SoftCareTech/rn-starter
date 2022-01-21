@@ -2,18 +2,20 @@ import React from 'react';
 import { View, Button, TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
+  console.log(props.navigation)
   return <View>
     <Text style={styles.text}>Hi there... I am going to follow step by step no jumping </Text>
     <Button
       title='Go to Component Demo'
       onPress={() => {
-        console.log("Componet press")
+        props.navigation.navigate('Components')
       }}
     /> 
     <TouchableOpacity 
       onPress={() => {
-        console.log("list press")
+        props.navigation.navigate('List')
+
       }}>
       <Text>Go to list Demo</Text>
     </TouchableOpacity>
