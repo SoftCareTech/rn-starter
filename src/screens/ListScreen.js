@@ -19,10 +19,14 @@ const friends2=[
     ]
     
    return <FlatList 
+    horizontal={true}
+    showsHorizontalScrollIndicator={false}
        keyExtractor={(friend)=>friend.name}
            data ={friends2}
             renderItem={({item })=>{ 
-                return <Text>{item.name} </Text>
+                return <Text 
+                 style={style.textStyle}
+                 >{item.name} </Text>
             }
         }
      />
@@ -30,6 +34,9 @@ const friends2=[
 
 // styles 
 const style = StyleSheet.create({
+    textStyle:{
+        marginVertical:50
+    }
 })
 
 /// export
