@@ -3,30 +3,23 @@ import React from 'react'
 import { Text, FlatList, StyleSheet, View } from 'react-native'
 
 //component
-const ListScreen = () => {
+const ListScreen = () => { 
+
 const friends=[
-{name:'Friend 1', key:'1'},
-{name:'Friend 2',key:'2'},
-{name:'Friend 3',key:'3'}
-
-]
-
-const friends2=[
-    {name:'Friend 1' },
-    {name:'Friend 2' },
-    {name:'Friend 3' }
-    
+    {name:'Friend 1' ,age :65},
+    {name:'Friend 2',age :15 },
+    {name:'Friend 3' ,age :12} 
     ]
     
    return <FlatList 
-    horizontal={true}
+    horizontal={false}
     showsHorizontalScrollIndicator={false}
        keyExtractor={(friend)=>friend.name}
-           data ={friends2}
+           data ={friends}
             renderItem={({item })=>{ 
                 return <Text 
                  style={style.textStyle}
-                 >{item.name} </Text>
+                 >{item.name} - {item.age} </Text>
             }
         }
      />
@@ -35,7 +28,7 @@ const friends2=[
 // styles 
 const style = StyleSheet.create({
     textStyle:{
-        marginVertical:50
+        marginVertical:10
     }
 })
 
