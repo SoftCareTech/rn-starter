@@ -6,7 +6,7 @@ const TextScreen = () => {
     const [name, setName] = useState('')
 
     return (<View>
-        <Text  >Text Screen </Text>
+        <Text  >Enter Password </Text>
         <TextInput
             autoCapitalize='none'
             autoCorrect={false}
@@ -14,7 +14,7 @@ const TextScreen = () => {
             value={name}
             onChangeText={(newValue) => setName(newValue)}
         />
-        <Text  >my name  is {name} </Text>
+        {name.length < 5 ? <Text>Password lenght small </Text> : null }
     </View>)
 }
 
