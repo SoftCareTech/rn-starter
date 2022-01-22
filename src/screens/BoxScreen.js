@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     textStyleF: {
         borderWidth: 3,
         borderColor: 'red',
-        flex: 1
+        flex: 1,
+        alignSelf: 'flex-end'
     }
 })
 
