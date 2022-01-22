@@ -4,8 +4,8 @@ import { Text, StyleSheet, View } from 'react-native'
 
 //Box
 const BoxScreen = () => {
-    return (<View>
-        <Text style={styles.textStyleSubHead} >Box Screen</Text>
+    return (<View style={styles.viewStyle}>
+        <Text style={styles.textStyle} >Box Screen</Text>
 
     </View>)
 }
@@ -13,7 +13,15 @@ const BoxScreen = () => {
 // styles 
 const styles = StyleSheet.create({
     viewStyle: {
-
+        borderWidth: 1,
+        borderColor: 'black'
+    },
+    textStyle: {
+        borderWidth: 3,
+        borderColor: 'red',
+        margin: 40,
+        padding:10,
+        paddingVertical:20
     }
 })
 
