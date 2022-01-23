@@ -13,12 +13,12 @@ const BoxScreen = () => {
 
 //Exercise to in two ways for midle view have two styles
 // that is styles.view2_1, styles.view2_2
-// styles 
+//view2_3   height must 2 times one box height
 const styles = StyleSheet.create({
     viewStyle: {
         borderWidth: 1,
         borderColor: 'black',
-        height: 234,
+        height: 200,
         flexDirection: 'row'
         , justifyContent: 'space-between'
     },
@@ -41,6 +41,13 @@ const styles = StyleSheet.create({
         height: 100,
         width: 100,
         marginTop: 100
+    },
+    view2_3: {
+        borderWidth: 1,
+        borderColor: 'black', backgroundColor: 'pink',
+        height: 100,
+        width: 100,
+        alignSelf: 'flex-end'
     },
     view3: {
         borderWidth: 1,
