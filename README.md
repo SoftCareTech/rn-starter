@@ -1,6 +1,7 @@
 ##Done with basics
 
-##It contains the following: 
+##It contains the following:
+ 
 Cpmponents
 
 Text,Image, Button
