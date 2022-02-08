@@ -9,5 +9,7 @@ npm-debug.*
 *.orig.*
 web-build/
 
+*Thumbs.db*
+
 # macOS
 .DS_Store
